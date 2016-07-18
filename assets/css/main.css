@@ -1,3 +1,30 @@
+
+.pi {
+    font-size: 20px;
+    padding-top: 100px;
+}
+.chat {
+    border: 1px solid black;
+    border-radius: 5px; 
+}
+.convo {
+    font-size: 30px;
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 5px;
+    height: 300px;
+}
+.icon {
+    display: inline-block;
+    font-size: 40px;
+    float: right;
+    background-color: #293f50;
+}
+.ico {
+    display: block;
+    font-size: 40px;
+    padding-top: 20px;
+}
 .footer {
     text-align: center;
     height: 80px;
@@ -89,7 +116,7 @@ body {
   width: 49%;
 }
 .col-2-3 {
-  width: 33.33%;
+  width: 33%;
 }
 
 /*

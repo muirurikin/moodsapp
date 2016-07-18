@@ -5,7 +5,64 @@
     <title>Moods App</title>
     <link rel="stylesheet" href="assets/css/main.css">
       <link rel="stylesheet" href="assets/css/reset.css">
-      <link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
-    <link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.css">
+      <link rel="stylesheet" href="assets/font-awesome-4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/font-awesome-4.6.3/css/font-awesome.css">
+      <script language="JavaScript">
+    function showInput() {
+        document.getElementById('display').innerHTML = 
+                    document.getElementById("user_input").value;
+    }
+  </script>
   </head>
 <body>
+    <header>
+        <h1 class="wa"><i class="fa fa-bars" aria-hidden="true"></i>Moods app</h1>
+        <section class="icon"><i class="fa fa-th" aria-hidden="true"></i></section>
+        <section class="icon"><i class="fa fa-bell" aria-hidden="true"></i></section>
+    </header>
+<section class="row">
+  <div class="grid">
+    <section class="col-2-3">
+    <section class="ico">
+        <section class="ico"><i class="fa fa-comment" aria-hidden="true"></i></section>
+        <section class="ico"><i class="fa fa-users" aria-hidden="true"></i></section>
+        <section class="ico"><i class="fa fa-search" aria-hidden="true"></i></section>
+        <section class="ico"><i class="fa fa-phone" aria-hidden="true"></i></section>
+        <section class="ico"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></section>
+        </section>
+      </section>
+    <section class="col-2-3">
+        <section class="convo">
+        <i class="fa fa-search-plus" aria-hidden="true">New Chat</i>
+            <p class="pi">No recent conversion <br> start a new one</p>
+        </section>
+        <section class="chat">
+           <form>
+    <label><b>Enter a Message</b></label>
+    <input type="text" name="message" id="user_input">
+  </form>
+            <input type="submit" onclick="showInput();" name="Send"><br/>
+  <label> </label>
+  <p><span id='display'></span></p>
+        </section>
+        </section>
+    <section class="col-2-3">
+      <p>Profile goes here</p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIFlizRUCTMETWN2wd3HNy-aeanv9oQSkjGcmo0sh7dcv3vxfR">
+    </section>
+    </div>
+    </section>
+    
+    <script src="https://www.gstatic.com/firebasejs/3.2.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyC5DPK8G7Xy6uBH-nxknB8hfJqfV1qCm6w",
+    authDomain: "my-awesome-project-41482.firebaseapp.com",
+    databaseURL: "https://my-awesome-project-41482.firebaseio.com",
+    storageBucket: "",
+  };
+  firebase.initializeApp(config);
+    </script>
+    </body>
+</html>
